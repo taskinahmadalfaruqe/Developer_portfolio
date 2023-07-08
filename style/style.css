@@ -1,0 +1,106 @@
+/* ALL COMMON CSS PART START  */
+
+:root{
+ --PRIMARY_COLOR: #FD6E0A;
+ --BACKGROUND_COLOR: #FFF8F3;
+ --WHITE_COLOR: #fff;
+ --BLACK_COLOR: #000;
+ --TEXT_COLOR: #757575;
+ --ROBOTO: 'Roboto', sans-serif;
+ --OPEN_SAN: 'Open Sans', sans-serif;
+ --HEADING_COLOR: #181818;
+ --H2_COLOR: #474747;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+ol, ul, li, a{
+ list-style: none;
+ text-decoration: none;
+ margin: 0;
+ padding: 0;
+ display: inline-block;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    font-family: var(--OPEN_SAN);
+}
+
+/* ALL COMMON CSS PART END */
+
+/* HEADER PART START */
+header{
+    background-color: var(--BACKGROUND_COLOR);
+}
+header nav{
+    padding: 30px 0;
+}
+header nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .container .logo{}
+header nav .container .logo a{}
+header nav .container .logo a img{}
+
+header nav .container .text{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+header nav .container .text ul{
+    display: flex;
+    gap: 70px;
+}
+header nav .container .text ul li a{
+    color: var(--H2_COLOR);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--ROBOTO);
+}
+header nav .container .text ul li:hover a{
+    color: var(--PRIMARY_COLOR);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+header nav .container .text button{
+    border: none;
+}
+header nav .container .text button a{
+    font-family: var(--ROBOTO);
+    font-size: 20px;
+    padding: 20px 35px;
+    color: var(--WHITE_COLOR);
+    background-color: var(--PRIMARY_COLOR);
+    border: 1px solid var(--PRIMARY_COLOR);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+header nav .container .text button a:hover{
+    color: var(--PRIMARY_COLOR);
+    background-color: var(--WHITE_COLOR);
+}
+
+/* HEADER PART END */
