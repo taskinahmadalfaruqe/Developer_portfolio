@@ -1,43 +1,49 @@
 /* ALL COMMON CSS PART START  */
-
-:root{
- --PRIMARY_COLOR: #FD6E0A;
- --BACKGROUND_COLOR: #FFF8F3;
- --WHITE_COLOR: #fff;
- --BLACK_COLOR: #000;
- --TEXT_COLOR: #757575;
- --ROBOTO: 'Roboto', sans-serif;
- --OPEN_SAN: 'Open Sans', sans-serif;
- --HEADING_COLOR: #181818;
- --H2_COLOR: #474747;
+:root {
+    --PRIMARY_COLOR: #FD6E0A;
+    --BACKGROUND_COLOR: #FFF8F3;
+    --WHITE_COLOR: #fff;
+    --BLACK_COLOR: #000;
+    --TEXT_COLOR: #757575;
+    --ROBOTO: 'Roboto', sans-serif;
+    --OPEN_SAN: 'Open Sans', sans-serif;
+    --HEADING_COLOR: #181818;
+    --H2_COLOR: #474747;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
 }
-
-ol, ul, li, a{
- list-style: none;
- text-decoration: none;
- margin: 0;
- padding: 0;
- display: inline-block;
+body {
+    font-family: var(--OPEN_SAN);
 }
-.container{
+.container {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0;
 }
-body{
-    font-family: var(--OPEN_SAN);
+a,
+li,
+ol,
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
-.common_btn{
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+.common_btn {
     border: none;
 }
-.common_btn a{
+.common_btn a {
     border: 1px solid var(--PRIMARY_COLOR);
     background-color: var(--PRIMARY_COLOR);
     color: var(--WHITE_COLOR);
@@ -49,78 +55,79 @@ body{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
     cursor: pointer;
 }
-.common_btn:hover a{
+.common_btn:hover a {
     border: 1px solid var(--PRIMARY_COLOR);
     background-color: var(--WHITE_COLOR);
     color: var(--PRIMARY_COLOR);
 }
-.common_btn a .icon{
-   display: flex;
-   align-items: center;
-   gap: 10px;
+.common_btn a .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.common_btn a .icon i{
-   font-size: 25px;
+.common_btn a .icon i {
+    font-size: 25px;
 }
 
 /* ALL COMMON CSS PART END */
 
 /* HEADER PART START */
-header{
+header {
     background-color: var(--BACKGROUND_COLOR);
-    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-image: url(../images/header_bg.png), url("../images/developer.png");
     background-repeat: no-repeat;
-    background-position: bottom right, top left;
-    margin-bottom: 200px;
+    background-position: bottom right, bottom left;
+    background-size: 750px auto, 100px auto;
 }
 
 /* NAV BARR PART START  */
-header nav{
-    padding: 30px 0;
+header nav {
+    padding: 30px 50px 30px 110px;
+    /* background: rgba(253, 111, 10, 0.56); */
 }
-header nav .container{
+header nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav .container .logo{}
-header nav .container .logo a{}
-header nav .container .logo a img{}
+header nav .container .logo {}
+header nav .container .logo a {}
+header nav .container .logo a img {}
 
-header nav .container .text{
+header nav .container .text {
     display: flex;
     gap: 50px;
     align-items: center;
 }
-header nav .container .text ul{
+header nav .container .text ul {
     display: flex;
     gap: 70px;
 }
-header nav .container .text ul li a{
+header nav .container .text ul li a {
     color: var(--H2_COLOR);
     font-size: 20px;
     text-transform: uppercase;
     font-family: var(--ROBOTO);
 }
-header nav .container .text ul li:hover a{
+header nav .container .text ul li:hover a {
     color: var(--PRIMARY_COLOR);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
 }
-header nav .container .text button{
+header nav .container .text button {
     border: none;
 }
-header nav .container .text button a{
+header nav .container .text button a {
     font-family: var(--ROBOTO);
     font-size: 20px;
     padding: 20px 35px;
@@ -132,60 +139,60 @@ header nav .container .text button a{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
 }
-header nav .container .text button a:hover{
+header nav .container .text button a:hover {
     color: var(--PRIMARY_COLOR);
     background-color: var(--WHITE_COLOR);
 }
 /* NAV BARR PART END  */
 
 /* BANNER PART START  */
-header .container{}
-header .container #banner{
+header .container {}
+header .container #banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
-header .container #banner .text{
+header .container #banner .text {
     max-width: 500px;
     padding-left: 39px;
 }
-header .container #banner .text h2{
+header .container #banner .text h2 {
     font-size: 45px;
     margin-bottom: 15px;
     color: var(--H2_COLOR);
 }
-header .container #banner .text h1{
+header .container #banner .text h1 {
     font-size: 65px;
     margin-bottom: 20px;
     color: var(--HEADING_COLOR);
     font-weight: 700;
 }
-header .container #banner .text p{
+header .container #banner .text p {
     font-size: 16px;
     color: var(--TEXT_COLOR);
 }
-header .container #banner .text .btn{
+header .container #banner .text .btn {
     display: flex;
     gap: 30px;
     margin-top: 30px;
 }
 
-header .container #banner .image{
+header .container #banner .image {
     padding: 0;
     margin: 0;
 }
-header .container #banner .image img{
+header .container #banner .image img {
     width: 550px;
     margin: 0 auto;
-    padding-top:  30px;
-    margin-bottom: -5px;
+    padding-top: 30px;
+    margin-bottom: -0px;
 }
 /* BANNER PART END  */
 
