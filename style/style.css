@@ -1,4 +1,7 @@
-/* ALL COMMON CSS PART START  */
+
+/* =================================================
+            ALL COMMON CSS PART START                    
+================================================== */
 :root {
     --PRIMARY_COLOR: #FD6E0A;
     --BACKGROUND_COLOR: #FFF8F3;
@@ -39,9 +42,15 @@ ul {
 img {
     width: 100%;
     vertical-align: middle;
+    object-fit: cover;
 }
 .common_btn {
     border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .common_btn a {
     border: 1px solid var(--PRIMARY_COLOR);
@@ -76,9 +85,16 @@ img {
     font-size: 25px;
 }
 
-/* ALL COMMON CSS PART END */
 
-/* HEADER PART START */
+/* =================================================
+            ALL COMMON CSS PART END                    
+================================================== */
+
+
+
+/* =================================================
+                HEADER PART START                    
+================================================== */
 header {
     background-color: var(--BACKGROUND_COLOR);
     background-image: url(../images/header_bg.png), url("../images/developer.png");
@@ -183,7 +199,6 @@ header .container #banner .text .btn {
     gap: 30px;
     margin-top: 30px;
 }
-
 header .container #banner .image {
     padding: 0;
     margin: 0;
@@ -195,5 +210,105 @@ header .container #banner .image img {
     margin-bottom: -0px;
 }
 /* BANNER PART END  */
+/* =================================================
+                HEADER PART END                    
+================================================== */
 
-/* HEADER PART END */
+
+
+
+/* =================================================
+                ABOUT PART START                    
+================================================== */
+.about_part{
+    margin: 130px auto;
+
+}
+.about_part .container{
+    background: var(--BACKGROUND_COLOR);
+    padding: 130px 155px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.about_part .container .hadding_caption{}
+.about_part .container .hadding_caption h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--HEADING_COLOR);
+    margin-bottom: 30px;
+}
+.about_part .container .hadding_caption .caption{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--TEXT_COLOR);
+    margin-bottom: 30px;
+}
+.about_part .container .description{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    color: var(--TEXT_COLOR);
+}
+.about_part .container .description .about_information{
+    background-color: var(--WHITE_COLOR);
+    padding: 9px;
+    border-radius: 10px;
+    line-height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.about_part .container .description .about_information .title {
+    font-size: 16px;
+}
+.about_part .container .description .about_information .about_description a{
+    color: var(--H2_COLOR);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* =================================================
+                ABOUT PART END                    
+================================================== */
+
+
+
+/* =================================================
+                ABOUT PART START                    
+================================================== */
+/* =================================================
+                ABOUT PART END                    
+================================================== */
+
+
+
+/* =================================================
+                ABOUT PART START                    
+================================================== */
+/* =================================================
+                ABOUT PART END                    
+================================================== */
+
+
+
+/* =================================================
+                ABOUT PART START                    
+================================================== */
+/* =================================================
+                ABOUT PART END                    
+================================================== */
+
+
+
+/* =================================================
+                ABOUT PART START                    
+================================================== */
+/* =================================================
+                ABOUT PART END                    
+================================================== */
